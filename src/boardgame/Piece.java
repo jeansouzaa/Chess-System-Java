@@ -1,5 +1,7 @@
 package boardgame;
 
+import chess.pieces.Knight;
+
 public abstract class Piece
 {
 
@@ -30,7 +32,6 @@ public abstract class Piece
 
 	public boolean isThereAnyPossibleMove()
 	{
-
 		boolean[][] matriz = possibleMoves();
 		for (int i = 0; i < matriz.length; i++)
 		{
